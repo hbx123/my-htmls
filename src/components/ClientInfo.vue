@@ -32,7 +32,6 @@
       getClientInfo: function () {
         let os = `${platform.os}`
         let browser = `${platform.name} ${platform.version}`
-        let resolution = `${screen.width}X${screen.height}`
         let ua = platform.ua
         let clientInfo = [
           {
@@ -41,9 +40,6 @@
           }, {
             key: '浏览器',
             value: browser
-          }, {
-            key: '分辨率',
-            value: resolution
           }, {
             key: '用户代理',
             value: ua
